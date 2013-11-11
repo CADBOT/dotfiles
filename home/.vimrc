@@ -56,4 +56,5 @@ set showcmd
 " Ignore case for searching
 set ignorecase
 set nowrap
+syntax on
 """"""""""""""""""""""""""""""""""
