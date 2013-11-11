@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""
