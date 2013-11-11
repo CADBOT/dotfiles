@@ -11,7 +11,10 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe' won't work at work :/
+"Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'ervandew/supertab'
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""
@@ -21,6 +24,10 @@ au VimEnter * RainbowParenthesesToggle
 " Following two aren't working...
 "au Syntax * RainbowParenthesesLoadSquare
 "au Syntax * RainbowParenthesesLoadBraces
+""""""""""""""""""""""""""""""""""
+
+"""""""" NERDTree config """""""""
+map <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""
 
 """""""" Vim Settings """"""""""""
@@ -48,5 +55,5 @@ set number
 set showcmd
 " Ignore case for searching
 set ignorecase
-
+set nowrap
 """"""""""""""""""""""""""""""""""
