@@ -57,4 +57,8 @@ set showcmd
 set ignorecase
 set nowrap
 syntax on
+" Make backspace work like it should
+set backspace=indent,eol,start
+" Make <F3> paste mode so I can paste code w/o indents
+set pastetoggle=<F3>
 """"""""""""""""""""""""""""""""""
