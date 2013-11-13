@@ -15,3 +15,9 @@ set fish_greeting
 # Path setup
 # Add RVM
 set fish_user_paths $fish_userpaths $HOME/.rvm/bin
+
+# Work computer specific
+if [ (hostid) = "3d0ae128" ]
+  # Dumb hack to get rvm working properly
+  rvm list
+end
