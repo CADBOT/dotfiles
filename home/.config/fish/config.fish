@@ -21,3 +21,6 @@ if [ (hostid) = "3d0ae128" ]
   # Dumb hack to get rvm working properly
   rvm list
 end
+
+# Swap caps and ESC
+setxkbmap -option caps:swapescape
