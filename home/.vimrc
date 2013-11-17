@@ -1,6 +1,4 @@
 """""""" Stuff for Vundle """"""""
-" So I can actually install bundles
-set shell=/bin/bash
 " Required for vundle to work
 filetype off
 
