@@ -13,14 +13,16 @@ end
 set fish_greeting
 
 # Path setup
-# Add RVM
-set fish_user_paths $fish_userpaths $HOME/.rvm/bin
+# Add rbenv
+set fish_user_paths $fish_user_paths $HOME/.rbenv/bin
+. (rbenv init -|psub)
+# Swap caps and ESC
+setxkbmap -option caps:swapescape
 
+#TODO update hostid to ubuntu machne
 # Work computer specific
 if [ (hostid) = "3d0ae128" ]
   # Dumb hack to get rvm working properly
   rvm list
 end
-
-# Swap caps and ESC
-setxkbmap -option caps:swapescape
+set fish_user_paths $fish_user_paths $HOME/kaiju/bin
