@@ -11,11 +11,8 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
-"Bundle 'Valloric/YouCompleteMe' won't work at work :/
-"Bundle 'Shougo/neocomplete.vim'
-"Bundle 'Shougo/neocomplcache.vim'
-"Bundle 'ervandew/supertab'
 Bundle 'Valloric/YouCompleteMe' 
+"Bundle 'scrooloose/syntastic' doesn't work with fish :/
 
 
 filetype plugin indent on
@@ -63,4 +60,12 @@ syntax on
 set backspace=indent,eol,start
 " Make <F3> paste mode so I can paste code w/o indents
 set pastetoggle=<F3>
+
+
+" With a map leader it's possible to do extra key combinations
+" " like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+" Fast saving
+nmap <leader>w :w!<cr>
 """"""""""""""""""""""""""""""""""
