@@ -26,3 +26,7 @@ if [ (hostid) = "3d0ae128" ]
   rvm list
 end
 set fish_user_paths $fish_user_paths $HOME/kaiju/bin
+
+# Simple alias' that don't warrent a function
+alias apt-get=apt-get -y
+alias vi=vim

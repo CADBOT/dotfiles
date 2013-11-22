@@ -13,8 +13,10 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
 "Bundle 'Valloric/YouCompleteMe' won't work at work :/
 "Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'ervandew/supertab'
+"Bundle 'Shougo/neocomplcache.vim'
+"Bundle 'ervandew/supertab'
+Bundle 'Valloric/YouCompleteMe' 
+
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""
