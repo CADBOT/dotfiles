@@ -1,4 +1,6 @@
-"""""""" Stuff for Vundle """"""""
+"To compensante for fish being non-POSIX
+set shell=sh
+"""""""" Stuff for Vundle 
 " Required for vundle to work
 filetype off
 
@@ -11,27 +13,31 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat' 
 Bundle 'Valloric/YouCompleteMe' 
+Bundle 'tsaleh/vim-matchit'
+Bundle 'dag/vim-fish'
+
 "Bundle 'scrooloose/syntastic' doesn't work with fish :/
 
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""
 
-"""""""" Rainbow parens config """
+"""""""" Rainbow parens config 
 au VimEnter * RainbowParenthesesToggle
 " Following two aren't working...
 "au Syntax * RainbowParenthesesLoadSquare
 "au Syntax * RainbowParenthesesLoadBraces
 """"""""""""""""""""""""""""""""""
 
-"""""""" NERDTree config """""""""
+"""""""" NERDTree config 
 map <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""
 
-"""""""" Vim Settings """"""""""""
+"""""""" Vim Settings 
 
-"""""""" Tab Stuff """""""""""""""
+"""""""" Tab Stuff 
 "Tab is converted to 2 spaces
 set softtabstop=2
 set shiftwidth=2
