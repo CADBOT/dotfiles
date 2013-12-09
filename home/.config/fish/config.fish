@@ -19,13 +19,11 @@ set fish_user_paths $fish_user_paths $HOME/.rbenv/bin
 # Swap caps and ESC
 setxkbmap -option caps:swapescape
 
-#TODO update hostid to ubuntu machne
-# Work computer specific
-if [ (hostid) = "3d0ae128" ]
-  # Dumb hack to get rvm working properly
-  rvm list
+# Work computer specific (Ubuntu)
+if [ (hostid) = "007f0101 " ]
+  # Kaiju is only useful at work for now.
+  set fish_user_paths $fish_user_paths $HOME/kaiju/bin
 end
-set fish_user_paths $fish_user_paths $HOME/kaiju/bin
 
 # Simple alias' that don't warrent a function
 alias apt-get=apt-get -y
