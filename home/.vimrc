@@ -17,6 +17,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'Valloric/YouCompleteMe' 
 Bundle 'tsaleh/vim-matchit'
 Bundle 'dag/vim-fish'
+Bundle 'scrooloose/syntastic'
+Bundle 'jpalardy/vim-slime'
 
 "Bundle 'scrooloose/syntastic' doesn't work with fish :/
 
@@ -72,6 +74,7 @@ set pastetoggle=<F3>
 " " like <leader>w saves the current file
 let mapleader = ","
 let g:mapleader = ","
-" Fast saving
+" Fast saving and quiting
 nmap <leader>w :w!<cr>
+nmap <leader>q :q!<cr>
 """"""""""""""""""""""""""""""""""
