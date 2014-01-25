@@ -25,6 +25,15 @@ if [ (hostid) = "007f0101 " ]
   set fish_user_paths $fish_user_paths $HOME/kaiju/bin
 end
 
+# TODO: temp workaround. get rid off
+set fish_user_paths $fish_user_paths $HOME/kaiju/bin
+#set fish_user_paths $fish_user_paths $HOME/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7/
+#set fish_user_paths $fish_user_paths $HOME/AWS-ElasticBeanstalk-CLI-2.6.0/api/bin
+set fish_user_paths $fish_user_paths /home/local/ANT/icharles/Desktop/AWSMACServiceRubyClient/bin
+
 # Simple alias' that don't warrent a function
 alias apt-get=apt-get -y
 alias vi=vim
+alias c=clear
+alias l=ls
+alias s=ls

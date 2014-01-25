@@ -19,6 +19,7 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'dag/vim-fish'
 Bundle 'scrooloose/syntastic'
 Bundle 'jpalardy/vim-slime'
+"Bundle 'elzr/vim-json'
 
 "Bundle 'scrooloose/syntastic' doesn't work with fish :/
 
