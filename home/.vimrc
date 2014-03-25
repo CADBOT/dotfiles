@@ -19,6 +19,7 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'dag/vim-fish'
 Bundle 'scrooloose/syntastic'
 Bundle 'jpalardy/vim-slime'
+Bundle 'kien/ctrlp.vim'
 "Bundle 'elzr/vim-json'
 
 "Bundle 'scrooloose/syntastic' doesn't work with fish :/
@@ -34,8 +35,25 @@ au VimEnter * RainbowParenthesesToggle
 "au Syntax * RainbowParenthesesLoadBraces
 """"""""""""""""""""""""""""""""""
 
-"""""""" NERDTree config 
+"""""""" NERDTree config *********
 map <F2> :NERDTreeToggle<CR>
+""""""""""""""""""""""""""""""""""
+
+"""""""" ctrlp config ************
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+" TODO maybe include wildignore stuff from ctrlp github page?
+
+""""""""""""""""""""""""""""""""""
+
+
+"""""""" vim-slime config ********
+
+"Use tmux instead of screen
+let g:slime_target = "tmux"
+
 """"""""""""""""""""""""""""""""""
 
 """""""" Vim Settings 

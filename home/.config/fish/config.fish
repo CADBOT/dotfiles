@@ -24,6 +24,8 @@ if [ (hostid) = "007f0101" ]
   # Kaiju is only useful at work for now.
   set fish_user_paths $fish_user_paths $HOME/kaiju/bin
   set fish_user_paths $fish_user_paths /home/local/ANT/icharles/Desktop/AWSMACServiceRubyClient/bin
+  set fish_user_paths $fish_user_paths /opt/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7
+  
 end
 
 # Simple alias' that don't warrent a function
