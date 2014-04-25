@@ -16,8 +16,6 @@ set fish_greeting
 # Add rbenv
 set fish_user_paths $fish_user_paths /opt/rbenv/bin
 . (rbenv init -|psub)
-# Swap caps and ESC
-setxkbmap -option caps:swapescape
 
 # Work computer specific (Ubuntu)
 if [ (hostid) = "007f0101" ]
