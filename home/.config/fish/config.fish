@@ -14,7 +14,7 @@ set fish_greeting
 
 # Path setup
 # Add rbenv
-set fish_user_paths $fish_user_paths $HOME/.rbenv/bin
+set fish_user_paths $fish_user_paths /opt/rbenv/bin
 . (rbenv init -|psub)
 # Swap caps and ESC
 setxkbmap -option caps:swapescape
