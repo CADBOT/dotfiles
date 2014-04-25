@@ -4,28 +4,29 @@ set shell=sh
 " Required for vundle to work
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat' 
-Bundle 'Valloric/YouCompleteMe' 
-Bundle 'tsaleh/vim-matchit'
-Bundle 'dag/vim-fish'
-Bundle 'scrooloose/syntastic'
-Bundle 'jpalardy/vim-slime'
-Bundle 'kien/ctrlp.vim'
-"Bundle 'elzr/vim-json'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat' 
+Plugin 'Valloric/YouCompleteMe' 
+Plugin 'tsaleh/vim-matchit'
+Plugin 'dag/vim-fish'
+Plugin 'scrooloose/syntastic'
+Plugin 'jpalardy/vim-slime'
+Plugin 'kien/ctrlp.vim'
+"Plugin 'elzr/vim-json'
 
-"Bundle 'scrooloose/syntastic' doesn't work with fish :/
+"Plugin 'scrooloose/syntastic' doesn't work with fish :/
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
-
-filetype plugin indent on
 """"""""""""""""""""""""""""""""""
 
 """""""" Rainbow parens config 
