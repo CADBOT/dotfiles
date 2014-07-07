@@ -22,6 +22,11 @@ set fish_user_paths $fish_user_paths ~/tools/AWS-ElasticBeanstalk-CLI-2.6.1/eb/l
 # link local bin
 set fish_user_paths $fish_user_paths ~/bin
 
+# link in chruby
+. /usr/local/share/chruby/chruby.fish
+. /usr/local/share/chruby/auto.fish
+chruby 2.1.1
+
 # Simple alias' that don't warrent a function
 alias apt-get=apt-get -y
 alias vi=vim
