@@ -17,7 +17,7 @@ set fish_plugins rvm vi-mode vundle
 . $fish_path/oh-my-fish.fish
 
 # link in local tools I want
-set fish_user_paths $fish_user_paths ~/tools/AWS-ElasticBeanstalk-CLI-2.6.1/eb/linux/python2.7
+ set fish_user_paths ~/.linuxbrew/bin/ $fish_user_paths
 
 # link local bin
 set fish_user_paths $fish_user_paths ~/bin
