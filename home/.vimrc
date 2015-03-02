@@ -19,6 +19,7 @@ Plugin 'dag/vim-fish'
 Plugin 'scrooloose/syntastic'
 Plugin 'jpalardy/vim-slime'
 Plugin 'kien/ctrlp.vim'
+Plugin 'kchmck/vim-coffee-script'
 "Plugin 'elzr/vim-json'
 
 "Plugin 'scrooloose/syntastic' doesn't work with fish :/
@@ -87,6 +88,8 @@ syntax on
 set backspace=indent,eol,start
 " Make <F3> paste mode so I can paste code w/o indents
 set pastetoggle=<F3>
+" Enable mouse use in all modes
+set mouse=a
 
 
 " With a map leader it's possible to do extra key combinations
@@ -97,3 +100,12 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 """"""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""" Extra functions
+function! RemoveWidthLimitWarnigns()
+    silent! call matchdelete(4)
+endfunction
+function! InsertWidthLimitWarnings()
+    call RemoveWidthLimitWarnigns()
+    call matchadd("ErrorMsg", "\\%>79v.\\+", 10, 4)
+endfunction
