@@ -90,6 +90,9 @@ set backspace=indent,eol,start
 set pastetoggle=<F3>
 " Enable mouse use in all modes
 set mouse=a
+" Visually highly lines that go paste 80 cols
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 
 " With a map leader it's possible to do extra key combinations
@@ -100,12 +103,3 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 """"""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""" Extra functions
-function! RemoveWidthLimitWarnigns()
-    silent! call matchdelete(4)
-endfunction
-function! InsertWidthLimitWarnings()
-    call RemoveWidthLimitWarnigns()
-    call matchadd("ErrorMsg", "\\%>79v.\\+", 10, 4)
-endfunction
