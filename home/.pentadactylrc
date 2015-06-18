@@ -1,0 +1,24 @@
+
+" Faster scrolling
+"map -b j 8j
+"map -b k 8k
+"map -b h 8h
+"map -b l 8l
+
+" use J and K to switch tabs
+map -builtin J <C-p>
+map -builtin K <C-n>
+
+" Use chars for hints
+set hintkeys=asdflkj
+hi -a Hint font-size: 9pt !important;
+
+"" open addons manager
+nmap -builtin ,a :dialog addons<CR>
+
+
+"" private mode
+nmap -builtin ,p :set private!<CR>
+
+"" display download
+nmap -builtin ,d :downloads<CR>
