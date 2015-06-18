@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jpalardy/vim-slime'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mtscout6/vim-cjsx'
 "Plugin 'elzr/vim-json'
 
 "Plugin 'scrooloose/syntastic' doesn't work with fish :/
